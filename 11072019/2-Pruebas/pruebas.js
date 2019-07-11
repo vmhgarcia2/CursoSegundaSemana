@@ -88,3 +88,30 @@ var a="a";
 var a="a";
 let b="a";
 console.log(a);  */
+
+var pares = [2, 4, 6, 10];
+var impares = [1, 3, 5];
+var todos = [...pares, ...impares]
+todos.sort((a, b) => a - b)
+console.log(todos);
+
+let [a, b, c, d] = pares;
+console.log(a, b, c, d)
+
+class msg{
+        constructor(mensaje,hecha){
+                this.mensaje=mensaje;
+                this.hecha=hecha;
+        }
+
+        marcarHecha(){
+                this.hecha=true;
+        }
+
+}
+
+let m=new msg("Hola", false);
+console.log(m);
+m.marcarHecha();
+console.log(m);
+

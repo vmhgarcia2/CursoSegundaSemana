@@ -89,7 +89,7 @@ var a="a";
 let b="a";
 console.log(a);  */
 
-var pares = [2, 4, 6, 10];
+/* var pares = [2, 4, 6, 10];
 var impares = [1, 3, 5];
 var todos = [...pares, ...impares]
 todos.sort((a, b) => a - b)
@@ -113,5 +113,18 @@ class msg{
 let m=new msg("Hola", false);
 console.log(m);
 m.marcarHecha();
-console.log(m);
+console.log(m); */
 
+window.addEventListener("load", () => {
+        console.log("cargada correctamente");
+        let anyadirTarea = document.getElementById("anyadirTarea");
+        let tarea = document.getElementById("nombreTarea");
+        let t=document.getElementById("tarea")
+        anyadirTarea.addEventListener("click", () => {
+                let nombreTarea = tarea.value;
+                console.log(nombreTarea);
+                let li=document.createElement("li");
+                li.innerText=nombreTarea;
+                t.appendChild(li);
+        })
+})

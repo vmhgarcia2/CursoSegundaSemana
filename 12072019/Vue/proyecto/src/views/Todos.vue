@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Hay algo</h1>
-    <Counter :initValue = "200"/>
+    <Counter :initValue = "200" :max="201" :min="199"/>
     <Counter :initValue = "3"/>
     <Counter/>
     <Counter/>
